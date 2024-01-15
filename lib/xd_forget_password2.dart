@@ -5,8 +5,8 @@ import './xd_forget_password3.dart';
 import 'package:adobe_xd/page_link.dart';
 
 class XDForgetPassword2 extends StatelessWidget {
-  XDForgetPassword2({
-    Key key,
+  const XDForgetPassword2({
+    Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -47,12 +47,12 @@ class XDForgetPassword2 extends StatelessWidget {
                   Pinned.fromPins(
                     Pin(size: 40.0, middle: 0.5),
                     Pin(size: 20.0, start: 10.0),
-                    child: Text(
+                    child: const Text(
                       'Verify',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 14,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         fontWeight: FontWeight.w500,
                       ),
                       textAlign: TextAlign.center,
@@ -66,12 +66,12 @@ class XDForgetPassword2 extends StatelessWidget {
           Pinned.fromPins(
             Pin(size: 252.0, start: 16.0),
             Pin(size: 42.0, start: 72.0),
-            child: Text.rich(
+            child: const Text.rich(
               TextSpan(
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 14,
-                  color: const Color(0xff444444),
+                  color: Color(0xff444444),
                   height: 1.5714285714285714,
                 ),
                 children: [
@@ -195,12 +195,12 @@ class XDForgetPassword2 extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(start: 0.0, end: 0.0),
                   Pin(size: 20.0, start: 0.0),
-                  child: Text.rich(
+                  child: const Text.rich(
                     TextSpan(
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 14,
-                        color: const Color(0xff444444),
+                        color: Color(0xff444444),
                       ),
                       children: [
                         TextSpan(
@@ -219,7 +219,7 @@ class XDForgetPassword2 extends StatelessWidget {
                     softWrap: false,
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.bottomLeft,
                   child: SizedBox(
                     width: 118.0,
@@ -229,7 +229,7 @@ class XDForgetPassword2 extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 14,
-                        color: const Color(0xff3b235d),
+                        color: Color(0xff3b235d),
                         fontWeight: FontWeight.w700,
                         decoration: TextDecoration.underline,
                       ),

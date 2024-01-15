@@ -6,9 +6,7 @@ import 'package:adobe_xd/page_link.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDForgetPassword3 extends StatelessWidget {
-  XDForgetPassword3({
-    Key key,
-  }) : super(key: key);
+  const XDForgetPassword3({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,12 +46,12 @@ class XDForgetPassword3 extends StatelessWidget {
                   Pinned.fromPins(
                     Pin(size: 58.0, middle: 0.5),
                     Pin(size: 20.0, start: 10.0),
-                    child: Text(
+                    child: const Text(
                       'Confirm',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 14,
-                        color: const Color(0xffffffff),
+                        color: Color(0xffffffff),
                         fontWeight: FontWeight.w500,
                       ),
                       textAlign: TextAlign.center,
@@ -79,17 +77,17 @@ class XDForgetPassword3 extends StatelessWidget {
                     border:
                         Border.all(width: 1.5, color: const Color(0xffd3d3d3)),
                   ),
-                  margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                  margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                 ),
                 Pinned.fromPins(
                   Pin(size: 87.0, end: 241.0),
                   Pin(size: 17.0, middle: 0.0),
-                  child: Text(
+                  child: const Text(
                     'New Password',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 12,
-                      color: const Color(0xff444444),
+                      color: Color(0xff444444),
                       fontWeight: FontWeight.w500,
                       height: 1.6666666666666667,
                     ),
@@ -99,7 +97,7 @@ class XDForgetPassword3 extends StatelessWidget {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(289.0, 34.0),
+                  offset: const Offset(289.0, 34.0),
                   child: SizedBox(
                     width: 23.0,
                     height: 14.0,
@@ -108,7 +106,7 @@ class XDForgetPassword3 extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Transform.translate(
-                          offset: Offset(0.0, 1.0),
+                          offset: const Offset(0.0, 1.0),
                           child: SizedBox(
                             width: 23.0,
                             height: 13.0,
@@ -140,7 +138,7 @@ class XDForgetPassword3 extends StatelessWidget {
                                   ),
                                 ),
                                 Transform.translate(
-                                  offset: Offset(7.7, 2.4),
+                                  offset: const Offset(7.7, 2.4),
                                   child: SizedBox(
                                     width: 8.0,
                                     height: 7.0,
@@ -172,7 +170,7 @@ class XDForgetPassword3 extends StatelessWidget {
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(4.7, 0.0),
+                          offset: const Offset(4.7, 0.0),
                           child: SizedBox(
                             width: 14.0,
                             height: 14.0,
@@ -204,17 +202,17 @@ class XDForgetPassword3 extends StatelessWidget {
                     border:
                         Border.all(width: 1.5, color: const Color(0xffd3d3d3)),
                   ),
-                  margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                  margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                 ),
                 Pinned.fromPins(
                   Pin(size: 140.0, end: 188.0),
                   Pin(size: 17.0, middle: 0.0),
-                  child: Text(
+                  child: const Text(
                     'Confirm New Password',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 12,
-                      color: const Color(0xff444444),
+                      color: Color(0xff444444),
                       fontWeight: FontWeight.w500,
                       height: 1.6666666666666667,
                     ),
@@ -224,7 +222,7 @@ class XDForgetPassword3 extends StatelessWidget {
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(289.0, 34.0),
+                  offset: const Offset(289.0, 34.0),
                   child: SizedBox(
                     width: 23.0,
                     height: 14.0,
@@ -233,7 +231,7 @@ class XDForgetPassword3 extends StatelessWidget {
                         Stack(
                       children: <Widget>[
                         Transform.translate(
-                          offset: Offset(0.0, 1.0),
+                          offset: const Offset(0.0, 1.0),
                           child: SizedBox(
                             width: 23.0,
                             height: 13.0,
@@ -265,7 +263,7 @@ class XDForgetPassword3 extends StatelessWidget {
                                   ),
                                 ),
                                 Transform.translate(
-                                  offset: Offset(7.7, 2.4),
+                                  offset: const Offset(7.7, 2.4),
                                   child: SizedBox(
                                     width: 8.0,
                                     height: 7.0,
@@ -297,7 +295,7 @@ class XDForgetPassword3 extends StatelessWidget {
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(4.7, 0.0),
+                          offset: const Offset(4.7, 0.0),
                           child: SizedBox(
                             width: 14.0,
                             height: 14.0,
