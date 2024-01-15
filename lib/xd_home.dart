@@ -310,7 +310,7 @@ class XDHome extends StatelessWidget {
                 PageLinkInfo(
                   ease: Curves.easeOut,
                   duration: 0.3,
-                  pageBuilder: () => XDQuiz(),
+                  pageBuilder: () => const XDQuiz(),
                 ),
               ],
               child: Stack(
@@ -532,7 +532,7 @@ class XDHome extends StatelessWidget {
                     links: [
                       PageLinkInfo(
                         duration: 1,
-                        pageBuilder: () => XDJobs(),
+                        pageBuilder: () => const XDJobs(),
                       ),
                     ],
                     child: Stack(
@@ -580,7 +580,7 @@ class XDHome extends StatelessWidget {
                     links: [
                       PageLinkInfo(
                         duration: 1,
-                        pageBuilder: () => XDInternships(),
+                        pageBuilder: () => const XDInternships(),
                       ),
                     ],
                     child: Stack(
@@ -627,7 +627,7 @@ class XDHome extends StatelessWidget {
             Pin(size: 56.0, end: 584.0),
             child:
                 // Adobe XD layer: 'top bar' (component)
-                XDTopBar(),
+                const XDTopBar(),
           ),
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),

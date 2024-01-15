@@ -740,7 +740,7 @@ class XDSignUp extends StatelessWidget {
                       links: [
                         PageLinkInfo(
                           duration: 1,
-                          pageBuilder: () => XDLogin(),
+                          pageBuilder: () => const XDLogin(),
                         ),
                       ],
                       child: const Text.rich(

@@ -49,7 +49,7 @@ class XDLogin extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(0.0, -0.572),
+            alignment: const Alignment(0.0, -0.572),
             child: SizedBox(
               width: 220.0,
               height: 42.0,
@@ -504,7 +504,7 @@ class XDLogin extends StatelessWidget {
                       links: [
                         PageLinkInfo(
                           duration: 1,
-                          pageBuilder: () => XDSignUp(),
+                          pageBuilder: () => const XDSignUp(),
                         ),
                       ],
                       child: const Text.rich(

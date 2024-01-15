@@ -17,7 +17,7 @@ class XDContactUs extends StatelessWidget {
             Pin(size: 56.0, end: 584.0),
             child:
                 // Adobe XD layer: 'top bar' (component)
-                XDTopBar(),
+                const XDTopBar(),
           ),
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),
