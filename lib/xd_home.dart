@@ -9,9 +9,7 @@ import './xd_bottom_navigation.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDHome extends StatelessWidget {
-  XDHome({
-    Key key,
-  }) : super(key: key);
+  const XDHome({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +26,7 @@ class XDHome extends StatelessWidget {
                 // Adobe XD layer: 'bg' (shape)
                 Container(
                   color: const Color(0xffeae8ed),
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 16.0),
+                  margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 16.0),
                 ),
                 Pinned.fromPins(
                   Pin(size: 80.0, start: 16.0),
@@ -37,8 +35,8 @@ class XDHome extends StatelessWidget {
                       // Adobe XD layer: 'image' (shape)
                       Container(
                     decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: const AssetImage(''),
+                      image: const DecorationImage(
+                        image: AssetImage(''),
                         fit: BoxFit.cover,
                       ),
                       borderRadius: BorderRadius.circular(5.0),
@@ -48,12 +46,12 @@ class XDHome extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 198.0, end: 50.0),
                   Pin(size: 42.0, start: 16.0),
-                  child: Text(
+                  child: const Text(
                     'TeamLead Engineer\n(.NET, Cloud Services, Java)',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14,
-                      color: const Color(0xff3b235d),
+                      color: Color(0xff3b235d),
                       fontWeight: FontWeight.w600,
                       height: 1.5714285714285714,
                     ),
@@ -62,7 +60,7 @@ class XDHome extends StatelessWidget {
                     softWrap: false,
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment(0.217, -0.392),
                   child: SizedBox(
                     width: 176.0,
@@ -72,7 +70,7 @@ class XDHome extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'Poppins',
                           fontSize: 12,
-                          color: const Color(0xff444444),
+                          color: Color(0xff444444),
                           height: 2.0833333333333335,
                         ),
                         children: [
@@ -94,7 +92,7 @@ class XDHome extends StatelessWidget {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(-0.161, -0.186),
+                  alignment: const Alignment(-0.161, -0.186),
                   child: SizedBox(
                     width: 93.0,
                     height: 17.0,
@@ -116,12 +114,12 @@ class XDHome extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 72.0, end: 0.0),
                           Pin(start: 0.0, end: 0.0),
-                          child: Text(
+                          child: const Text(
                             'Cairo, Egypt',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               height: 2.0833333333333335,
                             ),
                             textHeightBehavior: TextHeightBehavior(
@@ -134,7 +132,7 @@ class XDHome extends StatelessWidget {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(-0.108, 0.029),
+                  alignment: const Alignment(-0.108, 0.029),
                   child: SizedBox(
                     width: 109.0,
                     height: 17.0,
@@ -145,12 +143,12 @@ class XDHome extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 88.0, end: 0.0),
                           Pin(start: 0.0, end: 0.0),
-                          child: Text(
+                          child: const Text(
                             '.NET Developer',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               height: 2.0833333333333335,
                             ),
                             textHeightBehavior: TextHeightBehavior(
@@ -170,7 +168,7 @@ class XDHome extends StatelessWidget {
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment(0.042, 0.287),
                   child: SizedBox(
                     width: 145.0,
@@ -180,7 +178,7 @@ class XDHome extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 13,
-                        color: const Color(0xff444444),
+                        color: Color(0xff444444),
                         fontWeight: FontWeight.w600,
                         height: 1.9230769230769231,
                       ),
@@ -206,7 +204,7 @@ class XDHome extends StatelessWidget {
                               width: 1.0, color: const Color(0xff3b235d)),
                         ),
                       ),
-                      Center(
+                      const Center(
                         child: SizedBox(
                           width: 64.0,
                           height: 20.0,
@@ -215,7 +213,7 @@ class XDHome extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 14,
-                              color: const Color(0xff3b235d),
+                              color: Color(0xff3b235d),
                               fontWeight: FontWeight.w600,
                               height: 1.5714285714285714,
                             ),
@@ -241,55 +239,55 @@ class XDHome extends StatelessWidget {
                         Container(
                           width: 8.0,
                           height: 8.0,
-                          decoration: BoxDecoration(
-                            color: const Color(0xff3b235d),
+                          decoration: const BoxDecoration(
+                            color: Color(0xff3b235d),
                             borderRadius: BorderRadius.all(
                                 Radius.elliptical(9999.0, 9999.0)),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(12.0, 0.0),
+                          offset: const Offset(12.0, 0.0),
                           child: Container(
                             width: 8.0,
                             height: 8.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xffd3d3d3),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffd3d3d3),
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(24.0, 0.0),
+                          offset: const Offset(24.0, 0.0),
                           child: Container(
                             width: 8.0,
                             height: 8.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xffd3d3d3),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffd3d3d3),
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(36.0, 0.0),
+                          offset: const Offset(36.0, 0.0),
                           child: Container(
                             width: 8.0,
                             height: 8.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xffd3d3d3),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffd3d3d3),
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
                             ),
                           ),
                         ),
                         Transform.translate(
-                          offset: Offset(48.0, 0.0),
+                          offset: const Offset(48.0, 0.0),
                           child: Container(
                             width: 8.0,
                             height: 8.0,
-                            decoration: BoxDecoration(
-                              color: const Color(0xffd3d3d3),
+                            decoration: const BoxDecoration(
+                              color: Color(0xffd3d3d3),
                               borderRadius: BorderRadius.all(
                                   Radius.elliptical(9999.0, 9999.0)),
                             ),
@@ -327,7 +325,7 @@ class XDHome extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(24.0, 16.0),
+                    offset: const Offset(24.0, 16.0),
                     child: SizedBox(
                       width: 79.0,
                       height: 88.0,
@@ -344,14 +342,14 @@ class XDHome extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(7.4, 51.5),
+                            offset: const Offset(7.4, 51.5),
                             child:
                                 // Adobe XD layer: 'b9ad11c9-d8a0-4df6-…' (shape)
                                 Container(
                               width: 5.0,
                               height: 5.0,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.all(
+                                borderRadius: const BorderRadius.all(
                                     Radius.elliptical(9999.0, 9999.0)),
                                 border: Border.all(
                                     width: 1.0, color: const Color(0xff3b235d)),
@@ -359,7 +357,7 @@ class XDHome extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(5.0, 52.4),
+                            offset: const Offset(5.0, 52.4),
                             child: SizedBox(
                               width: 35.0,
                               height: 21.0,
@@ -370,14 +368,14 @@ class XDHome extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(7.4, 65.6),
+                            offset: const Offset(7.4, 65.6),
                             child:
                                 // Adobe XD layer: 'a50d232f-7710-43e4-…' (shape)
                                 Container(
                               width: 5.0,
                               height: 5.0,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.all(
+                                borderRadius: const BorderRadius.all(
                                     Radius.elliptical(9999.0, 9999.0)),
                                 border: Border.all(
                                     width: 1.0, color: const Color(0xff3b235d)),
@@ -385,7 +383,7 @@ class XDHome extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(15.7, 66.4),
+                            offset: const Offset(15.7, 66.4),
                             child: SizedBox(
                               width: 22.0,
                               height: 4.0,
@@ -396,7 +394,7 @@ class XDHome extends StatelessWidget {
                             ),
                           ),
                           Transform.translate(
-                            offset: Offset(39.5, 87.7),
+                            offset: const Offset(39.5, 87.7),
                             child: Container(
                               width: 39.0,
                               height: 0.0,
@@ -409,7 +407,7 @@ class XDHome extends StatelessWidget {
                             child: Stack(
                               children: <Widget>[
                                 Transform.translate(
-                                  offset: Offset(7.6, 33.4),
+                                  offset: const Offset(7.6, 33.4),
                                   child: SizedBox(
                                     width: 15.0,
                                     height: 34.0,
@@ -420,12 +418,12 @@ class XDHome extends StatelessWidget {
                                   ),
                                 ),
                                 Transform.translate(
-                                  offset: Offset(9.4, 1.8),
+                                  offset: const Offset(9.4, 1.8),
                                   child: Container(
                                     width: 9.0,
                                     height: 9.0,
-                                    decoration: BoxDecoration(
-                                      color: const Color(0xffffb8b8),
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xffffb8b8),
                                       borderRadius: BorderRadius.all(
                                           Radius.elliptical(9999.0, 9999.0)),
                                     ),
@@ -453,7 +451,7 @@ class XDHome extends StatelessWidget {
                             ),
                           ),
                           Align(
-                            alignment: Alignment(-0.495, -0.43),
+                            alignment: const Alignment(-0.495, -0.43),
                             child: SizedBox(
                               width: 8.0,
                               height: 13.0,
@@ -474,7 +472,7 @@ class XDHome extends StatelessWidget {
                         // Adobe XD layer: 'text' (group)
                         Stack(
                       children: <Widget>[
-                        Align(
+                        const Align(
                           alignment: Alignment.topLeft,
                           child: SizedBox(
                             width: 105.0,
@@ -484,7 +482,7 @@ class XDHome extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 18,
-                                color: const Color(0xff3b235d),
+                                color: Color(0xff3b235d),
                                 fontWeight: FontWeight.w600,
                                 height: 1.2222222222222223,
                               ),
@@ -497,12 +495,12 @@ class XDHome extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(start: 0.0, end: 0.0),
                           Pin(size: 36.0, end: 0.0),
-                          child: Text(
+                          child: const Text(
                             'you can take a quiz to specify\nwhich career is suitable for you.',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.5833333333333333,
                             ),
@@ -533,7 +531,7 @@ class XDHome extends StatelessWidget {
                       PageLink(
                     links: [
                       PageLinkInfo(
-                        duration: NaN,
+                        duration: 1,
                         pageBuilder: () => XDJobs(),
                       ),
                     ],
@@ -548,7 +546,7 @@ class XDHome extends StatelessWidget {
                                 width: 0.1, color: const Color(0xff707070)),
                           ),
                         ),
-                        Align(
+                        const Align(
                           alignment: Alignment(0.0, 0.059),
                           child: SizedBox(
                             width: 38.0,
@@ -558,7 +556,7 @@ class XDHome extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 16,
-                                color: const Color(0xff3b235d),
+                                color: Color(0xff3b235d),
                                 fontWeight: FontWeight.w600,
                                 height: 1.375,
                               ),
@@ -581,7 +579,7 @@ class XDHome extends StatelessWidget {
                       PageLink(
                     links: [
                       PageLinkInfo(
-                        duration: NaN,
+                        duration: 1,
                         pageBuilder: () => XDInternships(),
                       ),
                     ],
@@ -596,7 +594,7 @@ class XDHome extends StatelessWidget {
                                 width: 0.1, color: const Color(0xff707070)),
                           ),
                         ),
-                        Align(
+                        const Align(
                           alignment: Alignment(0.0, 0.059),
                           child: SizedBox(
                             width: 92.0,
@@ -606,7 +604,7 @@ class XDHome extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 16,
-                                color: const Color(0xff3b235d),
+                                color: Color(0xff3b235d),
                                 fontWeight: FontWeight.w600,
                                 height: 1.375,
                               ),
@@ -636,7 +634,7 @@ class XDHome extends StatelessWidget {
             Pin(size: 56.0, end: 0.0),
             child:
                 // Adobe XD layer: 'bottom navigation' (component)
-                XDBottomNavigation(),
+                const XDBottomNavigation(),
           ),
         ],
       ),

@@ -2,27 +2,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDInsideTopBar extends StatelessWidget {
-  XDInsideTopBar({
-    Key key,
-  }) : super(key: key);
+  const XDInsideTopBar({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
         // Adobe XD layer: 'bg' (shape)
         Container(
-          decoration: BoxDecoration(
-            color: const Color(0xffffffff),
+          decoration: const BoxDecoration(
+            color: Color(0xffffffff),
             boxShadow: [
               BoxShadow(
-                color: const Color(0x08000000),
+                color: Color(0x08000000),
                 offset: Offset(1, 1),
                 blurRadius: 2,
               ),
             ],
           ),
         ),
-        Align(
+        const Align(
           alignment: Alignment(0.0, 0.03),
           child: SizedBox(
             width: 92.0,
@@ -32,7 +30,7 @@ class XDInsideTopBar extends StatelessWidget {
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 16,
-                color: const Color(0xff444444),
+                color: Color(0xff444444),
                 fontWeight: FontWeight.w500,
                 height: 1.1875,
               ),
@@ -44,7 +42,7 @@ class XDInsideTopBar extends StatelessWidget {
           ),
         ),
         Transform.translate(
-          offset: Offset(24.0, 19.0),
+          offset: const Offset(24.0, 19.0),
           child: SizedBox(
             width: 10.0,
             height: 18.0,

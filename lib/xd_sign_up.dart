@@ -7,9 +7,7 @@ import './xd_inside_top_bar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDSignUp extends StatelessWidget {
-  XDSignUp({
-    Key key,
-  }) : super(key: key);
+  const XDSignUp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +15,7 @@ class XDSignUp extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.fromLTRB(16.0, 120.0, 16.0, 32.0),
+            padding: const EdgeInsets.fromLTRB(16.0, 120.0, 16.0, 32.0),
             child:
                 // Adobe XD layer: 'form' (group)
                 Stack(
@@ -37,17 +35,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 65.0, end: 95.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'First Name',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -76,17 +74,18 @@ class XDSignUp extends StatelessWidget {
                             border: Border.all(
                                 width: 1.5, color: const Color(0xffd3d3d3)),
                           ),
-                          margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                          margin:
+                              const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                         ),
                         Pinned.fromPins(
                           Pin(size: 64.0, end: 96.0),
                           Pin(size: 17.0, middle: 0.0),
-                          child: Text(
+                          child: const Text(
                             'Last Name',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.6666666666666667,
                             ),
@@ -114,17 +113,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 60.0, end: 268.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Phone No.',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -151,17 +150,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 33.0, end: 295.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Email',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -188,17 +187,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 74.0, end: 254.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Date of Birth',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -236,17 +235,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 94.0, end: 66.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Education Level',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -258,12 +257,12 @@ class XDSignUp extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 98.0, end: 54.0),
                         Pin(size: 17.0, middle: 0.75),
-                        child: Text(
+                        child: const Text(
                           'Select Edu. Level',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -287,7 +286,7 @@ class XDSignUp extends StatelessWidget {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(1.0, -0.094),
+                  alignment: const Alignment(1.0, -0.094),
                   child: SizedBox(
                     width: 160.0,
                     height: 61.0,
@@ -303,17 +302,18 @@ class XDSignUp extends StatelessWidget {
                             border: Border.all(
                                 width: 1.5, color: const Color(0xffd3d3d3)),
                           ),
-                          margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                          margin:
+                              const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                         ),
                         Pinned.fromPins(
                           Pin(size: 100.0, end: 60.0),
                           Pin(size: 17.0, middle: 0.0),
-                          child: Text(
+                          child: const Text(
                             'Graduation Year',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.6666666666666667,
                             ),
@@ -325,12 +325,12 @@ class XDSignUp extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 104.0, end: 48.0),
                           Pin(size: 17.0, middle: 0.75),
-                          child: Text(
+                          child: const Text(
                             'Select Grad. Year',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff9fa3a9),
+                              color: Color(0xff9fa3a9),
                               fontWeight: FontWeight.w500,
                               height: 1.6666666666666667,
                             ),
@@ -369,17 +369,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 59.0, end: 269.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'University',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -406,17 +406,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 34.0, end: 294.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Major',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -443,17 +443,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 58.0, end: 270.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Password',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -463,7 +463,7 @@ class XDSignUp extends StatelessWidget {
                         ),
                       ),
                       Transform.translate(
-                        offset: Offset(289.0, 34.0),
+                        offset: const Offset(289.0, 34.0),
                         child: SizedBox(
                           width: 23.0,
                           height: 14.0,
@@ -472,7 +472,7 @@ class XDSignUp extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Transform.translate(
-                                offset: Offset(0.0, 1.0),
+                                offset: const Offset(0.0, 1.0),
                                 child: SizedBox(
                                   width: 23.0,
                                   height: 13.0,
@@ -504,7 +504,7 @@ class XDSignUp extends StatelessWidget {
                                         ),
                                       ),
                                       Transform.translate(
-                                        offset: Offset(7.7, 2.4),
+                                        offset: const Offset(7.7, 2.4),
                                         child: SizedBox(
                                           width: 8.0,
                                           height: 7.0,
@@ -536,7 +536,7 @@ class XDSignUp extends StatelessWidget {
                                 ),
                               ),
                               Transform.translate(
-                                offset: Offset(4.7, 0.0),
+                                offset: const Offset(4.7, 0.0),
                                 child: SizedBox(
                                   width: 14.0,
                                   height: 14.0,
@@ -568,17 +568,17 @@ class XDSignUp extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 110.0, end: 218.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Confirm Password',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -588,7 +588,7 @@ class XDSignUp extends StatelessWidget {
                         ),
                       ),
                       Transform.translate(
-                        offset: Offset(289.0, 34.0),
+                        offset: const Offset(289.0, 34.0),
                         child: SizedBox(
                           width: 23.0,
                           height: 14.0,
@@ -597,7 +597,7 @@ class XDSignUp extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Transform.translate(
-                                offset: Offset(0.0, 1.0),
+                                offset: const Offset(0.0, 1.0),
                                 child: SizedBox(
                                   width: 23.0,
                                   height: 13.0,
@@ -629,7 +629,7 @@ class XDSignUp extends StatelessWidget {
                                         ),
                                       ),
                                       Transform.translate(
-                                        offset: Offset(7.7, 2.4),
+                                        offset: const Offset(7.7, 2.4),
                                         child: SizedBox(
                                           width: 8.0,
                                           height: 7.0,
@@ -661,7 +661,7 @@ class XDSignUp extends StatelessWidget {
                                 ),
                               ),
                               Transform.translate(
-                                offset: Offset(4.7, 0.0),
+                                offset: const Offset(4.7, 0.0),
                                 child: SizedBox(
                                   width: 14.0,
                                   height: 14.0,
@@ -686,8 +686,8 @@ class XDSignUp extends StatelessWidget {
                       PageLink(
                     links: [
                       PageLinkInfo(
-                        duration: NaN,
-                        pageBuilder: () => XDHome(),
+                        duration: 1,
+                        pageBuilder: () => const XDHome(),
                       ),
                     ],
                     child: Stack(
@@ -702,12 +702,12 @@ class XDSignUp extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 54.0, middle: 0.5),
                           Pin(size: 20.0, start: 10.0),
-                          child: Text(
+                          child: const Text(
                             'Sign Up',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 14,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               fontWeight: FontWeight.w500,
                             ),
                             textAlign: TextAlign.center,
@@ -739,16 +739,16 @@ class XDSignUp extends StatelessWidget {
                     child: PageLink(
                       links: [
                         PageLinkInfo(
-                          duration: NaN,
+                          duration: 1,
                           pageBuilder: () => XDLogin(),
                         ),
                       ],
-                      child: Text.rich(
+                      child: const Text.rich(
                         TextSpan(
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff808184),
+                            color: Color(0xff808184),
                           ),
                           children: [
                             TextSpan(
@@ -760,14 +760,14 @@ class XDSignUp extends StatelessWidget {
                             TextSpan(
                               text: '  ',
                               style: TextStyle(
-                                color: const Color(0xff707070),
+                                color: Color(0xff707070),
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
                             TextSpan(
                               text: 'Sign in',
                               style: TextStyle(
-                                color: const Color(0xff3b235d),
+                                color: Color(0xff3b235d),
                                 fontWeight: FontWeight.w500,
                                 decoration: TextDecoration.underline,
                               ),
@@ -790,7 +790,7 @@ class XDSignUp extends StatelessWidget {
             Pin(size: 56.0, start: 0.0),
             child:
                 // Adobe XD layer: 'inside top bar' (component)
-                XDInsideTopBar(),
+                const XDInsideTopBar(),
           ),
         ],
       ),

@@ -5,9 +5,7 @@ import './xd_bottom_navigation.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDInternships extends StatelessWidget {
-  XDInternships({
-    Key key,
-  }) : super(key: key);
+  const XDInternships({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,12 +38,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 157.0, end: 155.0),
                         Pin(size: 17.0, middle: 0.5217),
-                        child: Text(
+                        child: const Text(
                           'What are you looking for ?',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -76,12 +74,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 69.0, end: 244.0),
                         Pin(size: 17.0, middle: 0.5217),
-                        child: Text(
+                        child: const Text(
                           'Select Area',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -123,12 +121,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 63.0, end: 250.0),
                         Pin(size: 17.0, middle: 0.5217),
-                        child: Text(
+                        child: const Text(
                           'Select Skill',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -168,12 +166,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 50.0, middle: 0.5),
                         Pin(size: 20.0, start: 10.0),
-                        child: Text(
+                        child: const Text(
                           'Search',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xffffffff),
+                            color: Color(0xffffffff),
                             fontWeight: FontWeight.w500,
                           ),
                           textAlign: TextAlign.center,
@@ -214,8 +212,8 @@ class XDInternships extends StatelessWidget {
                             // Adobe XD layer: 'image' (shape)
                             Container(
                           decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: const AssetImage(''),
+                            image: const DecorationImage(
+                              image: AssetImage(''),
                               fit: BoxFit.cover,
                             ),
                             borderRadius: BorderRadius.circular(5.0),
@@ -225,12 +223,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 198.0, end: 18.0),
                         Pin(size: 42.0, start: 16.0),
-                        child: Text(
+                        child: const Text(
                           'TeamLead Engineer\n(.NET, Cloud Services, Java)',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff3b235d),
+                            color: Color(0xff3b235d),
                             fontWeight: FontWeight.w600,
                             height: 1.5714285714285714,
                           ),
@@ -242,12 +240,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 176.0, end: 40.0),
                         Pin(size: 17.0, middle: 0.3298),
-                        child: Text.rich(
+                        child: const Text.rich(
                           TextSpan(
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               height: 2.0833333333333335,
                             ),
                             children: [
@@ -268,7 +266,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(-0.047, -0.117),
+                        alignment: const Alignment(-0.047, -0.117),
                         child: SizedBox(
                           width: 93.0,
                           height: 17.0,
@@ -290,12 +288,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 72.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   'Cairo, Egypt',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -308,7 +306,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(0.023, 0.117),
+                        alignment: const Alignment(0.023, 0.117),
                         child: SizedBox(
                           width: 109.0,
                           height: 17.0,
@@ -319,12 +317,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 88.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   '.NET Developer',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -344,7 +342,7 @@ class XDInternships extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Align(
+                      const Align(
                         alignment: Alignment(0.224, 0.398),
                         child: SizedBox(
                           width: 145.0,
@@ -354,7 +352,7 @@ class XDInternships extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 13,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w600,
                               height: 1.9230769230769231,
                             ),
@@ -380,7 +378,7 @@ class XDInternships extends StatelessWidget {
                                     width: 1.0, color: const Color(0xff3b235d)),
                               ),
                             ),
-                            Center(
+                            const Center(
                               child: SizedBox(
                                 width: 76.0,
                                 height: 20.0,
@@ -389,7 +387,7 @@ class XDInternships extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 14,
-                                    color: const Color(0xff3b235d),
+                                    color: Color(0xff3b235d),
                                     fontWeight: FontWeight.w600,
                                     height: 1.5714285714285714,
                                   ),
@@ -437,8 +435,8 @@ class XDInternships extends StatelessWidget {
                             // Adobe XD layer: 'image' (shape)
                             Container(
                               decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: const AssetImage(''),
+                                image: const DecorationImage(
+                                  image: AssetImage(''),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.circular(5.0),
@@ -450,12 +448,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 145.0, middle: 0.612),
                         Pin(size: 42.0, start: 16.0),
-                        child: Text(
+                        child: const Text(
                           'Senior Fullstack .NET\nEngineer',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff3b235d),
+                            color: Color(0xff3b235d),
                             fontWeight: FontWeight.w600,
                             height: 1.5714285714285714,
                           ),
@@ -467,12 +465,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 176.0, end: 40.0),
                         Pin(size: 17.0, middle: 0.3298),
-                        child: Text.rich(
+                        child: const Text.rich(
                           TextSpan(
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               height: 2.0833333333333335,
                             ),
                             children: [
@@ -493,7 +491,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(-0.047, -0.117),
+                        alignment: const Alignment(-0.047, -0.117),
                         child: SizedBox(
                           width: 93.0,
                           height: 17.0,
@@ -515,12 +513,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 72.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   'Cairo, Egypt',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -533,7 +531,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(0.023, 0.117),
+                        alignment: const Alignment(0.023, 0.117),
                         child: SizedBox(
                           width: 109.0,
                           height: 17.0,
@@ -544,12 +542,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 88.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   '.NET Developer',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -569,7 +567,7 @@ class XDInternships extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Align(
+                      const Align(
                         alignment: Alignment(0.224, 0.398),
                         child: SizedBox(
                           width: 145.0,
@@ -579,7 +577,7 @@ class XDInternships extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 13,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w600,
                               height: 1.9230769230769231,
                             ),
@@ -605,7 +603,7 @@ class XDInternships extends StatelessWidget {
                                     width: 1.0, color: const Color(0xff3b235d)),
                               ),
                             ),
-                            Center(
+                            const Center(
                               child: SizedBox(
                                 width: 76.0,
                                 height: 20.0,
@@ -614,7 +612,7 @@ class XDInternships extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 14,
-                                    color: const Color(0xff3b235d),
+                                    color: Color(0xff3b235d),
                                     fontWeight: FontWeight.w600,
                                     height: 1.5714285714285714,
                                   ),
@@ -652,8 +650,8 @@ class XDInternships extends StatelessWidget {
                             // Adobe XD layer: 'image' (shape)
                             Container(
                           decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: const AssetImage(''),
+                            image: const DecorationImage(
+                              image: AssetImage(''),
                               fit: BoxFit.cover,
                             ),
                             borderRadius: BorderRadius.circular(5.0),
@@ -663,12 +661,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 99.0, middle: 0.4891),
                         Pin(size: 20.0, start: 16.0),
-                        child: Text(
+                        child: const Text(
                           'Scrum Master',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff3b235d),
+                            color: Color(0xff3b235d),
                             fontWeight: FontWeight.w600,
                             height: 1.5714285714285714,
                           ),
@@ -680,12 +678,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 176.0, end: 40.0),
                         Pin(size: 17.0, middle: 0.2339),
-                        child: Text.rich(
+                        child: const Text.rich(
                           TextSpan(
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               height: 2.0833333333333335,
                             ),
                             children: [
@@ -706,7 +704,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(-0.047, -0.287),
+                        alignment: const Alignment(-0.047, -0.287),
                         child: SizedBox(
                           width: 93.0,
                           height: 17.0,
@@ -728,12 +726,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 72.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   'Cairo, Egypt',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -746,7 +744,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(0.023, -0.029),
+                        alignment: const Alignment(0.023, -0.029),
                         child: SizedBox(
                           width: 109.0,
                           height: 17.0,
@@ -757,12 +755,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 88.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   '.NET Developer',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -782,7 +780,7 @@ class XDInternships extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Align(
+                      const Align(
                         alignment: Alignment(0.224, 0.278),
                         child: SizedBox(
                           width: 145.0,
@@ -792,7 +790,7 @@ class XDInternships extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 13,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w600,
                               height: 1.9230769230769231,
                             ),
@@ -818,7 +816,7 @@ class XDInternships extends StatelessWidget {
                                     width: 1.0, color: const Color(0xff3b235d)),
                               ),
                             ),
-                            Center(
+                            const Center(
                               child: SizedBox(
                                 width: 76.0,
                                 height: 20.0,
@@ -827,7 +825,7 @@ class XDInternships extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 14,
-                                    color: const Color(0xff3b235d),
+                                    color: Color(0xff3b235d),
                                     fontWeight: FontWeight.w600,
                                     height: 1.5714285714285714,
                                   ),
@@ -875,8 +873,8 @@ class XDInternships extends StatelessWidget {
                             // Adobe XD layer: 'image' (shape)
                             Container(
                               decoration: BoxDecoration(
-                                image: DecorationImage(
-                                  image: const AssetImage(''),
+                                image: const DecorationImage(
+                                  image: AssetImage(''),
                                   fit: BoxFit.cover,
                                 ),
                                 borderRadius: BorderRadius.circular(5.0),
@@ -888,12 +886,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 179.0, end: 37.0),
                         Pin(size: 42.0, start: 16.0),
-                        child: Text(
+                        child: const Text(
                           'Senior/Middle Fullstack\nEngineer (Java, ReactJS)',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff3b235d),
+                            color: Color(0xff3b235d),
                             fontWeight: FontWeight.w600,
                             height: 1.5714285714285714,
                           ),
@@ -905,12 +903,12 @@ class XDInternships extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 176.0, end: 40.0),
                         Pin(size: 17.0, middle: 0.3298),
-                        child: Text.rich(
+                        child: const Text.rich(
                           TextSpan(
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               height: 2.0833333333333335,
                             ),
                             children: [
@@ -931,7 +929,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(-0.047, -0.117),
+                        alignment: const Alignment(-0.047, -0.117),
                         child: SizedBox(
                           width: 93.0,
                           height: 17.0,
@@ -953,12 +951,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 72.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   'Cairo, Egypt',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -971,7 +969,7 @@ class XDInternships extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment(0.023, 0.117),
+                        alignment: const Alignment(0.023, 0.117),
                         child: SizedBox(
                           width: 109.0,
                           height: 17.0,
@@ -982,12 +980,12 @@ class XDInternships extends StatelessWidget {
                               Pinned.fromPins(
                                 Pin(size: 88.0, end: 0.0),
                                 Pin(start: 0.0, end: 0.0),
-                                child: Text(
+                                child: const Text(
                                   '.NET Developer',
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 12,
-                                    color: const Color(0xff444444),
+                                    color: Color(0xff444444),
                                     height: 2.0833333333333335,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
@@ -1007,7 +1005,7 @@ class XDInternships extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Align(
+                      const Align(
                         alignment: Alignment(0.224, 0.398),
                         child: SizedBox(
                           width: 145.0,
@@ -1017,7 +1015,7 @@ class XDInternships extends StatelessWidget {
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 13,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w600,
                               height: 1.9230769230769231,
                             ),
@@ -1043,7 +1041,7 @@ class XDInternships extends StatelessWidget {
                                     width: 1.0, color: const Color(0xff3b235d)),
                               ),
                             ),
-                            Center(
+                            const Center(
                               child: SizedBox(
                                 width: 76.0,
                                 height: 20.0,
@@ -1052,7 +1050,7 @@ class XDInternships extends StatelessWidget {
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontSize: 14,
-                                    color: const Color(0xff3b235d),
+                                    color: Color(0xff3b235d),
                                     fontWeight: FontWeight.w600,
                                     height: 1.5714285714285714,
                                   ),
@@ -1084,7 +1082,7 @@ class XDInternships extends StatelessWidget {
             Pin(size: 56.0, middle: 0.5127),
             child:
                 // Adobe XD layer: 'bottom navigation' (component)
-                XDBottomNavigation(),
+                const XDBottomNavigation(),
           ),
         ],
       ),

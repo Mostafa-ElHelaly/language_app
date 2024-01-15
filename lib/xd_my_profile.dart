@@ -5,8 +5,8 @@ import './xd_bottom_navigation.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDMyProfile extends StatelessWidget {
-  XDMyProfile({
-    Key key,
+  const XDMyProfile({
+    Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -24,12 +24,12 @@ class XDMyProfile extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 156.0, end: 0.0),
                   Pin(start: 72.0, end: 0.0),
-                  child: Text(
+                  child: const Text(
                     'Change Profile Picture',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14,
-                      color: const Color(0xff3b235d),
+                      color: Color(0xff3b235d),
                       fontWeight: FontWeight.w500,
                     ),
                     textAlign: TextAlign.center,
@@ -42,9 +42,9 @@ class XDMyProfile extends StatelessWidget {
                   child:
                       // Adobe XD layer: 'image' (shape)
                       Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
-                        image: const AssetImage(''),
+                        image: AssetImage(''),
                         fit: BoxFit.cover,
                       ),
                       borderRadius:
@@ -77,17 +77,17 @@ class XDMyProfile extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 65.0, end: 95.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'First Name',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -116,17 +116,18 @@ class XDMyProfile extends StatelessWidget {
                             border: Border.all(
                                 width: 1.5, color: const Color(0xffd3d3d3)),
                           ),
-                          margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                          margin:
+                              const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                         ),
                         Pinned.fromPins(
                           Pin(size: 64.0, end: 96.0),
                           Pin(size: 17.0, middle: 0.0),
-                          child: Text(
+                          child: const Text(
                             'Last Name',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.6666666666666667,
                             ),
@@ -159,12 +160,12 @@ class XDMyProfile extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 74.0, end: 254.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Date of Birth',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -207,12 +208,12 @@ class XDMyProfile extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 94.0, end: 66.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Education Level',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -224,12 +225,12 @@ class XDMyProfile extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 98.0, end: 54.0),
                         Pin(size: 17.0, middle: 0.75),
-                        child: Text(
+                        child: const Text(
                           'Select Edu. Level',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -274,12 +275,12 @@ class XDMyProfile extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 100.0, end: 60.0),
                           Pin(size: 17.0, middle: 0.0),
-                          child: Text(
+                          child: const Text(
                             'Graduation Year',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.6666666666666667,
                             ),
@@ -291,12 +292,12 @@ class XDMyProfile extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 104.0, end: 48.0),
                           Pin(size: 17.0, middle: 0.75),
-                          child: Text(
+                          child: const Text(
                             'Select Grad. Year',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff9fa3a9),
+                              color: Color(0xff9fa3a9),
                               fontWeight: FontWeight.w500,
                               height: 1.6666666666666667,
                             ),
@@ -335,17 +336,17 @@ class XDMyProfile extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 59.0, end: 269.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'University',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -372,17 +373,17 @@ class XDMyProfile extends StatelessWidget {
                           border: Border.all(
                               width: 1.5, color: const Color(0xffd3d3d3)),
                         ),
-                        margin: EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
+                        margin: const EdgeInsets.fromLTRB(0.0, 21.0, 0.0, 0.0),
                       ),
                       Pinned.fromPins(
                         Pin(size: 34.0, end: 294.0),
                         Pin(size: 17.0, middle: 0.0),
-                        child: Text(
+                        child: const Text(
                           'Major',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff444444),
+                            color: Color(0xff444444),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -422,7 +423,7 @@ class XDMyProfile extends StatelessWidget {
                     ),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment(0.0, 0.538),
                   child: SizedBox(
                     width: 110.0,
@@ -434,7 +435,7 @@ class XDMyProfile extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 14,
-                        color: const Color(0xff444444),
+                        color: Color(0xff444444),
                         fontWeight: FontWeight.w500,
                         height: 1.3571428571428572,
                       ),
@@ -465,12 +466,12 @@ class XDMyProfile extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 102.0, middle: 0.5),
                   Pin(size: 20.0, start: 10.0),
-                  child: Text(
+                  child: const Text(
                     'Save Changes',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14,
-                      color: const Color(0xffffffff),
+                      color: Color(0xffffffff),
                       fontWeight: FontWeight.w500,
                     ),
                     textAlign: TextAlign.center,
@@ -492,7 +493,7 @@ class XDMyProfile extends StatelessWidget {
             Pin(size: 56.0, middle: 0.7264),
             child:
                 // Adobe XD layer: 'bottom navigation' (component)
-                XDBottomNavigation(),
+                const XDBottomNavigation(),
           ),
         ],
       ),

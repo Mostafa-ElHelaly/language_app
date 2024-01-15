@@ -3,8 +3,8 @@ import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDOptions extends StatelessWidget {
-  XDOptions({
-    Key key,
+  const XDOptions({
+    Key? key,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -13,12 +13,12 @@ class XDOptions extends StatelessWidget {
         Pinned.fromPins(
           Pin(size: 63.0, start: 0.0),
           Pin(start: 0.0, end: 0.0),
-          child: Text(
+          child: const Text(
             'Options',
             style: TextStyle(
               fontFamily: 'Poppins',
               fontSize: 16,
-              color: const Color(0xff444444),
+              color: Color(0xff444444),
               fontWeight: FontWeight.w500,
               height: 1.1875,
             ),
@@ -28,7 +28,7 @@ class XDOptions extends StatelessWidget {
           ),
         ),
         Transform.translate(
-          offset: Offset(232.0, 7.5),
+          offset: const Offset(232.0, 7.5),
           child: SizedBox(
             width: 16.0,
             height: 8.0,

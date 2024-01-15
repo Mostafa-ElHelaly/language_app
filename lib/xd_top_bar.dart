@@ -3,20 +3,18 @@ import 'package:adobe_xd/pinned.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDTopBar extends StatelessWidget {
-  XDTopBar({
-    Key key,
-  }) : super(key: key);
+  const XDTopBar({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
         // Adobe XD layer: 'bg' (shape)
         Container(
-          decoration: BoxDecoration(
-            color: const Color(0xffffffff),
+          decoration: const BoxDecoration(
+            color: Color(0xffffffff),
             boxShadow: [
               BoxShadow(
-                color: const Color(0x08000000),
+                color: Color(0x08000000),
                 offset: Offset(1, 1),
                 blurRadius: 2,
               ),
@@ -24,7 +22,7 @@ class XDTopBar extends StatelessWidget {
           ),
         ),
         Transform.translate(
-          offset: Offset(155.0, 12.0),
+          offset: const Offset(155.0, 12.0),
           child: SizedBox(
             width: 51.0,
             height: 32.0,
@@ -86,7 +84,7 @@ class XDTopBar extends StatelessWidget {
           ),
         ),
         Transform.translate(
-          offset: Offset(320.0, 16.5),
+          offset: const Offset(320.0, 16.5),
           child: SizedBox(
             width: 24.0,
             height: 24.0,

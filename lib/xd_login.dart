@@ -7,9 +7,7 @@ import './xd_sign_up.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDLogin extends StatelessWidget {
-  XDLogin({
-    Key key,
-  }) : super(key: key);
+  const XDLogin({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +28,7 @@ class XDLogin extends StatelessWidget {
             ),
           ),
           Transform.translate(
-            offset: Offset(129.0, 40.0),
+            offset: const Offset(129.0, 40.0),
             child: SizedBox(
               width: 102.0,
               height: 64.0,
@@ -59,7 +57,7 @@ class XDLogin extends StatelessWidget {
                   // Adobe XD layer: 'title' (group)
                   Stack(
                 children: <Widget>[
-                  Align(
+                  const Align(
                     alignment: Alignment.topCenter,
                     child: SizedBox(
                       width: 148.0,
@@ -69,7 +67,7 @@ class XDLogin extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'Poppins',
                           fontSize: 18,
-                          color: const Color(0xff444444),
+                          color: Color(0xff444444),
                           fontWeight: FontWeight.w600,
                         ),
                         textAlign: TextAlign.center,
@@ -80,12 +78,12 @@ class XDLogin extends StatelessWidget {
                   Pinned.fromPins(
                     Pin(start: 0.0, end: 0.0),
                     Pin(size: 17.0, end: 0.0),
-                    child: Text(
+                    child: const Text(
                       'You Have Been Missed For Long Time',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 12,
-                        color: const Color(0xff444444),
+                        color: Color(0xff444444),
                         height: 2.6666666666666665,
                       ),
                       textHeightBehavior:
@@ -124,12 +122,12 @@ class XDLogin extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 39.0, start: 16.0),
                         Pin(size: 20.0, middle: 0.5),
-                        child: Text(
+                        child: const Text(
                           'Email',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff707070),
+                            color: Color(0xff707070),
                             fontWeight: FontWeight.w500,
                           ),
                           softWrap: false,
@@ -155,7 +153,7 @@ class XDLogin extends StatelessWidget {
                         ),
                       ),
                       Transform.translate(
-                        offset: Offset(289.0, 13.0),
+                        offset: const Offset(289.0, 13.0),
                         child: SizedBox(
                           width: 23.0,
                           height: 14.0,
@@ -164,7 +162,7 @@ class XDLogin extends StatelessWidget {
                               Stack(
                             children: <Widget>[
                               Transform.translate(
-                                offset: Offset(0.0, 1.0),
+                                offset: const Offset(0.0, 1.0),
                                 child: SizedBox(
                                   width: 23.0,
                                   height: 13.0,
@@ -196,7 +194,7 @@ class XDLogin extends StatelessWidget {
                                         ),
                                       ),
                                       Transform.translate(
-                                        offset: Offset(7.7, 2.4),
+                                        offset: const Offset(7.7, 2.4),
                                         child: SizedBox(
                                           width: 8.0,
                                           height: 7.0,
@@ -228,7 +226,7 @@ class XDLogin extends StatelessWidget {
                                 ),
                               ),
                               Transform.translate(
-                                offset: Offset(4.7, 0.0),
+                                offset: const Offset(4.7, 0.0),
                                 child: SizedBox(
                                   width: 14.0,
                                   height: 14.0,
@@ -245,12 +243,12 @@ class XDLogin extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 68.0, start: 16.0),
                         Pin(size: 20.0, middle: 0.5464),
-                        child: Text(
+                        child: const Text(
                           'Password',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff707070),
+                            color: Color(0xff707070),
                             fontWeight: FontWeight.w500,
                           ),
                           softWrap: false,
@@ -260,23 +258,23 @@ class XDLogin extends StatelessWidget {
                   ),
                 ),
                 Align(
-                  alignment: Alignment(1.0, 0.238),
+                  alignment: const Alignment(1.0, 0.238),
                   child: SizedBox(
                     width: 163.0,
                     height: 20.0,
                     child: PageLink(
                       links: [
                         PageLinkInfo(
-                          duration: NaN,
-                          pageBuilder: () => XDForgetPassword1(),
+                          duration: 1,
+                          pageBuilder: () => const XDForgetPassword1(),
                         ),
                       ],
-                      child: Text(
+                      child: const Text(
                         'Forget Your Password ?',
                         style: TextStyle(
                           fontFamily: 'Poppins',
                           fontSize: 14,
-                          color: const Color(0xff3b235d),
+                          color: Color(0xff3b235d),
                           fontWeight: FontWeight.w500,
                         ),
                         textAlign: TextAlign.right,
@@ -296,7 +294,7 @@ class XDLogin extends StatelessWidget {
                         transition: LinkTransition.Fade,
                         ease: Curves.easeOut,
                         duration: 0.3,
-                        pageBuilder: () => XDHome(),
+                        pageBuilder: () => const XDHome(),
                       ),
                     ],
                     child: Stack(
@@ -311,12 +309,12 @@ class XDLogin extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 38.0, middle: 0.5),
                           Pin(size: 20.0, start: 10.0),
-                          child: Text(
+                          child: const Text(
                             'Login',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 14,
-                              color: const Color(0xffffffff),
+                              color: Color(0xffffffff),
                               fontWeight: FontWeight.w500,
                             ),
                             textAlign: TextAlign.center,
@@ -331,7 +329,7 @@ class XDLogin extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(-0.002, 0.602),
+            alignment: const Alignment(-0.002, 0.602),
             child: SizedBox(
               width: 224.0,
               height: 66.0,
@@ -339,7 +337,7 @@ class XDLogin extends StatelessWidget {
                   // Adobe XD layer: 'sign in with' (group)
                   Stack(
                 children: <Widget>[
-                  Align(
+                  const Align(
                     alignment: Alignment.topCenter,
                     child: SizedBox(
                       width: 91.0,
@@ -351,7 +349,7 @@ class XDLogin extends StatelessWidget {
                         style: TextStyle(
                           fontFamily: 'TT Norms Pro',
                           fontSize: 14,
-                          color: const Color(0xff444444),
+                          color: Color(0xff444444),
                           fontWeight: FontWeight.w500,
                           height: 1.2857142857142858,
                         ),
@@ -371,8 +369,8 @@ class XDLogin extends StatelessWidget {
                           PageLink(
                         links: [
                           PageLinkInfo(
-                            duration: NaN,
-                            pageBuilder: () => XDHome(),
+                            duration: 1,
+                            pageBuilder: () => const XDHome(),
                           ),
                         ],
                         child: Stack(
@@ -396,7 +394,7 @@ class XDLogin extends StatelessWidget {
                     ),
                   ),
                   Align(
-                    alignment: Alignment(-0.321, 1.0),
+                    alignment: const Alignment(-0.321, 1.0),
                     child: SizedBox(
                       width: 33.0,
                       height: 32.0,
@@ -405,15 +403,15 @@ class XDLogin extends StatelessWidget {
                           PageLink(
                         links: [
                           PageLinkInfo(
-                            duration: NaN,
-                            pageBuilder: () => XDHome(),
+                            duration: 1,
+                            pageBuilder: () => const XDHome(),
                           ),
                         ],
                         child: Stack(
                           children: <Widget>[
                             // Adobe XD layer: 'icon FB [Frame Back…' (shape)
                             Container(
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                             ),
                             SizedBox.expand(
                                 child:
@@ -429,7 +427,7 @@ class XDLogin extends StatelessWidget {
                     ),
                   ),
                   Align(
-                    alignment: Alignment(0.325, 1.0),
+                    alignment: const Alignment(0.325, 1.0),
                     child: SizedBox(
                       width: 27.0,
                       height: 32.0,
@@ -438,8 +436,8 @@ class XDLogin extends StatelessWidget {
                           PageLink(
                         links: [
                           PageLinkInfo(
-                            duration: NaN,
-                            pageBuilder: () => XDHome(),
+                            duration: 1,
+                            pageBuilder: () => const XDHome(),
                           ),
                         ],
                         child: Stack(
@@ -463,7 +461,7 @@ class XDLogin extends StatelessWidget {
                     ),
                   ),
                   Transform.translate(
-                    offset: Offset(190.0, 33.3),
+                    offset: const Offset(190.0, 33.3),
                     child: SizedBox(
                       width: 34.0,
                       height: 32.0,
@@ -472,8 +470,8 @@ class XDLogin extends StatelessWidget {
                           PageLink(
                         links: [
                           PageLinkInfo(
-                            duration: NaN,
-                            pageBuilder: () => XDHome(),
+                            duration: 1,
+                            pageBuilder: () => const XDHome(),
                           ),
                         ],
                         child: SvgPicture.string(
@@ -505,16 +503,16 @@ class XDLogin extends StatelessWidget {
                     child: PageLink(
                       links: [
                         PageLinkInfo(
-                          duration: NaN,
+                          duration: 1,
                           pageBuilder: () => XDSignUp(),
                         ),
                       ],
-                      child: Text.rich(
+                      child: const Text.rich(
                         TextSpan(
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff808184),
+                            color: Color(0xff808184),
                           ),
                           children: [
                             TextSpan(
@@ -526,14 +524,14 @@ class XDLogin extends StatelessWidget {
                             TextSpan(
                               text: '  ',
                               style: TextStyle(
-                                color: const Color(0xff707070),
+                                color: Color(0xff707070),
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
                             TextSpan(
                               text: 'Sign Up',
                               style: TextStyle(
-                                color: const Color(0xff3b235d),
+                                color: Color(0xff3b235d),
                                 fontWeight: FontWeight.w500,
                                 decoration: TextDecoration.underline,
                               ),

@@ -8,9 +8,7 @@ import './xd_login.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDSideMenu extends StatelessWidget {
-  XDSideMenu({
-    Key key,
-  }) : super(key: key);
+  const XDSideMenu({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,24 +19,24 @@ class XDSideMenu extends StatelessWidget {
             color: const Color(0x80000000),
           ),
           Padding(
-            padding: EdgeInsets.fromLTRB(0.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsets.fromLTRB(0.0, 0.0, 16.0, 0.0),
             child:
                 // Adobe XD layer: 'menu' (group)
                 Stack(
               children: <Widget>[
                 // Adobe XD layer: 'bg' (shape)
                 Container(
-                  decoration: BoxDecoration(
-                    color: const Color(0xffffffff),
+                  decoration: const BoxDecoration(
+                    color: Color(0xffffffff),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0x29000000),
+                        color: Color(0x29000000),
                         offset: Offset(3, 0),
                         blurRadius: 6,
                       ),
                     ],
                   ),
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 48.0, 0.0),
+                  margin: const EdgeInsets.fromLTRB(0.0, 0.0, 48.0, 0.0),
                 ),
                 Pinned.fromPins(
                   Pin(size: 198.0, start: 24.0),
@@ -48,8 +46,8 @@ class XDSideMenu extends StatelessWidget {
                       PageLink(
                     links: [
                       PageLinkInfo(
-                        duration: NaN,
-                        pageBuilder: () => XDMyProfile(),
+                        duration: 1,
+                        pageBuilder: () => const XDMyProfile(),
                       ),
                     ],
                     child: Stack(
@@ -57,12 +55,12 @@ class XDSideMenu extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 135.0, end: 0.0),
                           Pin(start: 4.0, end: 25.0),
-                          child: Text(
+                          child: const Text(
                             'Mohamed Ahmed',
                             style: TextStyle(
                               fontFamily: 'TT Norms Pro',
                               fontSize: 16,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               letterSpacing: 0.16,
                               fontWeight: FontWeight.w700,
                             ),
@@ -72,12 +70,12 @@ class XDSideMenu extends StatelessWidget {
                         Pinned.fromPins(
                           Pin(size: 75.0, end: 60.0),
                           Pin(start: 29.0, end: 3.0),
-                          child: Text(
+                          child: const Text(
                             'View Profile',
                             style: TextStyle(
                               fontFamily: 'TT Norms Pro',
                               fontSize: 14,
-                              color: const Color(0xff808184),
+                              color: Color(0xff808184),
                               letterSpacing: 0.14,
                             ),
                             softWrap: false,
@@ -90,9 +88,9 @@ class XDSideMenu extends StatelessWidget {
                               Container(
                             width: 48.0,
                             height: 48.0,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               image: DecorationImage(
-                                image: const AssetImage(''),
+                                image: AssetImage(''),
                                 fit: BoxFit.cover,
                               ),
                               borderRadius: BorderRadius.all(
@@ -116,12 +114,12 @@ class XDSideMenu extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 48.0, start: 24.0),
                   Pin(size: 23.0, middle: 0.1961),
-                  child: Text(
+                  child: const Text(
                     'Home',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,
-                      color: const Color(0xff444444),
+                      color: Color(0xff444444),
                       fontWeight: FontWeight.w500,
                       height: 1.1875,
                     ),
@@ -136,16 +134,16 @@ class XDSideMenu extends StatelessWidget {
                   child: PageLink(
                     links: [
                       PageLinkInfo(
-                        duration: NaN,
-                        pageBuilder: () => XDJobs(),
+                        duration: 1,
+                        pageBuilder: () => const XDJobs(),
                       ),
                     ],
-                    child: Text(
+                    child: const Text(
                       'Jobs',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 16,
-                        color: const Color(0xff444444),
+                        color: Color(0xff444444),
                         fontWeight: FontWeight.w500,
                         height: 1.1875,
                       ),
@@ -158,12 +156,12 @@ class XDSideMenu extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 94.0, start: 24.0),
                   Pin(size: 23.0, middle: 0.3225),
-                  child: Text(
+                  child: const Text(
                     'Companies',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,
-                      color: const Color(0xff444444),
+                      color: Color(0xff444444),
                       fontWeight: FontWeight.w500,
                       height: 1.1875,
                     ),
@@ -175,12 +173,12 @@ class XDSideMenu extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(size: 35.0, start: 24.0),
                   Pin(size: 23.0, middle: 0.3857),
-                  child: Text(
+                  child: const Text(
                     'Blog',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 16,
-                      color: const Color(0xff444444),
+                      color: Color(0xff444444),
                       fontWeight: FontWeight.w500,
                       height: 1.1875,
                     ),
@@ -194,7 +192,7 @@ class XDSideMenu extends StatelessWidget {
                   Pin(size: 23.0, middle: 0.4489),
                   child:
                       // Adobe XD layer: 'options' (component)
-                      XDOptions(),
+                      const XDOptions(),
                 ),
                 Pinned.fromPins(
                   Pin(size: 12.0, end: 0.0),
@@ -218,7 +216,7 @@ class XDSideMenu extends StatelessWidget {
                         transition: LinkTransition.Fade,
                         ease: Curves.easeOut,
                         duration: 0.3,
-                        pageBuilder: () => XDLogin(),
+                        pageBuilder: () => const XDLogin(),
                       ),
                     ],
                     child: Stack(
@@ -239,7 +237,7 @@ class XDSideMenu extends StatelessWidget {
                               // Adobe XD layer: 'text' (group)
                               Stack(
                             children: <Widget>[
-                              Align(
+                              const Align(
                                 alignment: Alignment.topRight,
                                 child: SizedBox(
                                   width: 48.0,
@@ -249,7 +247,7 @@ class XDSideMenu extends StatelessWidget {
                                     style: TextStyle(
                                       fontFamily: 'Poppins',
                                       fontSize: 14,
-                                      color: const Color(0xff3b235d),
+                                      color: Color(0xff3b235d),
                                       fontWeight: FontWeight.w500,
                                     ),
                                     softWrap: false,

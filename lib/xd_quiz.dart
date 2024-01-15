@@ -5,9 +5,7 @@ import './xd_inside_top_bar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDQuiz extends StatelessWidget {
-  XDQuiz({
-    Key key,
-  }) : super(key: key);
+  const XDQuiz({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,14 +17,14 @@ class XDQuiz extends StatelessWidget {
             Pin(size: 56.0, end: 0.0),
             child:
                 // Adobe XD layer: 'bottom navigation' (component)
-                XDBottomNavigation(),
+                const XDBottomNavigation(),
           ),
           Pinned.fromPins(
             Pin(start: 0.0, end: 0.0),
             Pin(size: 56.0, start: 0.0),
             child:
                 // Adobe XD layer: 'inside top bar' (component)
-                XDInsideTopBar(),
+                const XDInsideTopBar(),
           ),
           Pinned.fromPins(
             Pin(start: 16.0, end: 16.0),
@@ -41,17 +39,17 @@ class XDQuiz extends StatelessWidget {
                     color: const Color(0xffeae8ed),
                     borderRadius: BorderRadius.circular(10.0),
                   ),
-                  margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 25.0),
+                  margin: const EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 25.0),
                 ),
                 Pinned.fromPins(
                   Pin(size: 72.0, start: 16.0),
                   Pin(size: 20.0, start: 8.0),
-                  child: Text(
+                  child: const Text(
                     'Question 1',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14,
-                      color: const Color(0xff3b235d),
+                      color: Color(0xff3b235d),
                       fontWeight: FontWeight.w600,
                       height: 1.5714285714285714,
                     ),
@@ -63,12 +61,12 @@ class XDQuiz extends StatelessWidget {
                 Pinned.fromPins(
                   Pin(start: 16.0, end: 16.0),
                   Pin(size: 40.0, middle: 0.4675),
-                  child: Text(
+                  child: const Text(
                     'Which of the following best describes the Industrial Revolution ?',
                     style: TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 14,
-                      color: const Color(0xff444444),
+                      color: Color(0xff444444),
                       fontWeight: FontWeight.w500,
                       height: 1.4285714285714286,
                     ),
@@ -76,7 +74,7 @@ class XDQuiz extends StatelessWidget {
                         TextHeightBehavior(applyHeightToFirstAscent: false),
                   ),
                 ),
-                Align(
+                const Align(
                   alignment: Alignment.bottomRight,
                   child: SizedBox(
                     width: 33.0,
@@ -86,7 +84,7 @@ class XDQuiz extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 12,
-                        color: const Color(0xff444444),
+                        color: Color(0xff444444),
                         height: 2.0833333333333335,
                       ),
                       textHeightBehavior:
@@ -137,7 +135,7 @@ class XDQuiz extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.fromLTRB(48.0, 0.0, 8.0, 16.0),
                         child: SizedBox.expand(
                             child: Text(
@@ -145,7 +143,7 @@ class XDQuiz extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff1e1e1e),
+                            color: Color(0xff1e1e1e),
                             fontWeight: FontWeight.w500,
                             height: 1.4285714285714286,
                           ),
@@ -191,7 +189,7 @@ class XDQuiz extends StatelessWidget {
                               ),
                             ),
                             Transform.translate(
-                              offset: Offset(6.0, 8.0),
+                              offset: const Offset(6.0, 8.0),
                               child: SizedBox(
                                 width: 12.0,
                                 height: 8.0,
@@ -204,7 +202,7 @@ class XDQuiz extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.fromLTRB(48.0, 0.0, 8.0, 16.0),
                         child: SizedBox.expand(
                             child: Text(
@@ -212,7 +210,7 @@ class XDQuiz extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff1e1e1e),
+                            color: Color(0xff1e1e1e),
                             fontWeight: FontWeight.w500,
                             height: 1.4285714285714286,
                           ),
@@ -254,7 +252,7 @@ class XDQuiz extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.fromLTRB(48.0, 0.0, 8.0, 16.0),
                         child: SizedBox.expand(
                             child: Text(
@@ -262,7 +260,7 @@ class XDQuiz extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff1e1e1e),
+                            color: Color(0xff1e1e1e),
                             fontWeight: FontWeight.w500,
                             height: 1.4285714285714286,
                           ),
@@ -293,7 +291,7 @@ class XDQuiz extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.fromLTRB(40.0, 0.0, 0.0, 0.0),
                         child: SizedBox.expand(
                             child: Text(
@@ -301,7 +299,7 @@ class XDQuiz extends StatelessWidget {
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff1e1e1e),
+                            color: Color(0xff1e1e1e),
                             fontWeight: FontWeight.w500,
                             height: 1.4285714285714286,
                           ),
@@ -339,12 +337,12 @@ class XDQuiz extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 30.0, middle: 0.5),
                         Pin(size: 20.0, start: 10.0),
-                        child: Text(
+                        child: const Text(
                           'Next',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xffffffff),
+                            color: Color(0xffffffff),
                             fontWeight: FontWeight.w500,
                           ),
                           textAlign: TextAlign.center,
@@ -373,12 +371,12 @@ class XDQuiz extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 60.0, middle: 0.5),
                         Pin(size: 20.0, start: 10.0),
-                        child: Text(
+                        child: const Text(
                           'Previous',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xff3b235d),
+                            color: Color(0xff3b235d),
                             fontWeight: FontWeight.w500,
                           ),
                           textAlign: TextAlign.center,
