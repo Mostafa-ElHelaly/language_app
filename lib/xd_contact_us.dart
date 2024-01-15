@@ -5,9 +5,7 @@ import './xd_bottom_navigation.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class XDContactUs extends StatelessWidget {
-  XDContactUs({
-    Key key,
-  }) : super(key: key);
+  const XDContactUs({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +24,7 @@ class XDContactUs extends StatelessWidget {
             Pin(size: 56.0, end: 0.0),
             child:
                 // Adobe XD layer: 'bottom navigation' (component)
-                XDBottomNavigation(),
+                const XDBottomNavigation(),
           ),
           Pinned.fromPins(
             Pin(start: 16.0, end: 16.0),
@@ -54,12 +52,12 @@ class XDContactUs extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 45.0, end: 267.0),
                         Pin(size: 17.0, middle: 0.5217),
-                        child: Text(
+                        child: const Text(
                           'Subject',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -90,12 +88,12 @@ class XDContactUs extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 54.0, end: 258.0),
                         Pin(size: 17.0, middle: 0.169),
-                        child: Text(
+                        child: const Text(
                           'Message',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 12,
-                            color: const Color(0xff9fa3a9),
+                            color: Color(0xff9fa3a9),
                             fontWeight: FontWeight.w500,
                             height: 1.6666666666666667,
                           ),
@@ -124,12 +122,12 @@ class XDContactUs extends StatelessWidget {
                       Pinned.fromPins(
                         Pin(size: 36.0, middle: 0.5),
                         Pin(size: 20.0, start: 10.0),
-                        child: Text(
+                        child: const Text(
                           'Send',
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 14,
-                            color: const Color(0xffffffff),
+                            color: Color(0xffffffff),
                             fontWeight: FontWeight.w500,
                           ),
                           textAlign: TextAlign.center,
@@ -143,7 +141,7 @@ class XDContactUs extends StatelessWidget {
             ),
           ),
           Align(
-            alignment: Alignment(0.0, 0.236),
+            alignment: const Alignment(0.0, 0.236),
             child: SizedBox(
               width: 246.0,
               height: 148.0,
@@ -158,7 +156,7 @@ class XDContactUs extends StatelessWidget {
                         // Adobe XD layer: 'title' (group)
                         Stack(
                       children: <Widget>[
-                        Align(
+                        const Align(
                           alignment: Alignment(0.01, -1.0),
                           child: SizedBox(
                             width: 101.0,
@@ -170,7 +168,7 @@ class XDContactUs extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 18,
-                                color: const Color(0xff3b235d),
+                                color: Color(0xff3b235d),
                                 fontWeight: FontWeight.w600,
                                 height: 1.2222222222222223,
                               ),
@@ -185,12 +183,12 @@ class XDContactUs extends StatelessWidget {
                           Pin(size: 17.0, end: 0.0),
                           child:
                               // Adobe XD layer: 'Find our offices ar…' (text)
-                              Text(
+                              const Text(
                             'Find our offices around the world!',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.5833333333333333,
                             ),
@@ -220,7 +218,7 @@ class XDContactUs extends StatelessWidget {
                             fit: BoxFit.fill,
                           ),
                         ),
-                        Align(
+                        const Align(
                           alignment: Alignment(0.123, -1.0),
                           child: SizedBox(
                             width: 94.0,
@@ -232,7 +230,7 @@ class XDContactUs extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 14,
-                                color: const Color(0xff444444),
+                                color: Color(0xff444444),
                                 fontWeight: FontWeight.w600,
                                 height: 1.5714285714285714,
                               ),
@@ -248,12 +246,12 @@ class XDContactUs extends StatelessWidget {
                           Pin(size: 17.0, end: 0.0),
                           child:
                               // Adobe XD layer: 'Frederiksberg, Nord…' (text)
-                              Text(
+                              const Text(
                             'Frederiksberg, Nordhavn, Sydhavn',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.5833333333333333,
                             ),
@@ -284,7 +282,7 @@ class XDContactUs extends StatelessWidget {
                             fit: BoxFit.fill,
                           ),
                         ),
-                        Align(
+                        const Align(
                           alignment: Alignment(0.072, -1.0),
                           child: SizedBox(
                             width: 52.0,
@@ -296,7 +294,7 @@ class XDContactUs extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Poppins',
                                 fontSize: 14,
-                                color: const Color(0xff444444),
+                                color: Color(0xff444444),
                                 fontWeight: FontWeight.w600,
                                 height: 1.5714285714285714,
                               ),
@@ -311,12 +309,12 @@ class XDContactUs extends StatelessWidget {
                           Pin(size: 17.0, end: 0.0),
                           child:
                               // Adobe XD layer: 'Frederiksberg, Nord…' (text)
-                              Text(
+                              const Text(
                             'Hackney Wick, Brixton, Elephant & Castle',
                             style: TextStyle(
                               fontFamily: 'Poppins',
                               fontSize: 12,
-                              color: const Color(0xff444444),
+                              color: Color(0xff444444),
                               fontWeight: FontWeight.w500,
                               height: 1.5833333333333333,
                             ),
